@@ -1,0 +1,87 @@
+<!DOCTYPE html>   <!-- tipo de documento-->
+<html lang="en"> <!-- etiqueta global html -->
+<head> <!-- cabeza de documento -->
+   <meta charset="UTF-8"> <!-- codificación de caracteres -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+   <title>Contacto</title> <!-- título de la página -->
+   <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon"> <!-- icono en pestaña de navegador-->
+   <link rel="stylesheet" href="../css/style.css"> <!--linkeo archivo estilos css-->
+</head>
+<body>
+    <header>
+        <a href="login.html"><img src="../img/icon_cart.jpg" class="icon_cart"></a> 
+        <a href="login.html"><img src="../img/icon_login.jpg" class="icon_login"></a>   
+        <h1 class="logo">Power Gamer</h1>
+                  
+                    <nav>
+                       <h2>Menú</h2>
+                       <br>
+                      <br>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                             <li><a href="market.html">tienda</a></li>
+                             <li><a href="aboutus.html">sobre nosotros</a></li>
+                             <li><a href="contactus.html">contacto</a></li>
+                        </ul>                          
+                    </nav>       <!-- barra de navegación-->
+        </header>
+    <br>
+    <br>
+    <br>
+        <h2 class="contactus_title">Contacto</h2>
+<form action="thanks.html" method="get" enctype="text/plain" class="form">
+    
+    <div>
+        <label for="_name">nombre (*)</label>
+        <input type="text" id="_name" placeholder="Ingresa tu nombre" required>
+    </div>
+    <br>
+    <div>
+        <label for="_email">email (*)</label>
+        <input type="email" id="_email" placeholder="example@mail.com" required>
+    </div>
+    <br>
+    <div>
+        <label for="_phone">teléfono</label>
+        <input type="text" id="_phone" placeholder="ingresa tu teléfono">
+    </div>
+    <br>
+
+    <select name="_subject" id="_subject">
+        <option value="1"> Consulta sobre productos</option>
+        <option value="2"> Consulta sobre compras </option>
+        <option value="3"> Otras consultas </option>
+    </select>
+    <br>
+    <br>
+        <div>
+        <textarea name="_comment" id="_comment" cols="50" rows="10" placeholder="Ingresa tu comentario" required=""></textarea>
+        </div>
+       
+     <br>    
+         
+        <div>
+            <label for="acepto" >Acepto términos y condiciones (*)</label>
+            <input type="checkbox" id="acepto" required>
+        </div>
+        <div>
+            <label for="_newsletter">Deseo recibir noticias de productos</label>
+            <input type="checkbox" id="_newsletter">
+        </div>
+    <br>    
+        <p fontsize="4">los campos con (*) son obligatorios</p>
+        <div class="contactus_buttons">
+        <input type="submit" value="Enviar comentario">
+            <input type="reset" value="Borrar todo">
+        </div> 
+</form>
+
+
+<footer id="_footer">
+    <span><p>Power Gamer todos los derechos reservados.</p></span>
+      <p>Daniel Lamas</p><!-- pie de página  -->
+ </footer>
+
+</body>
+</html>
