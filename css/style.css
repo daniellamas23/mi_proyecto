@@ -1,100 +1,108 @@
-/*comentario en css*/
+/*GOOGLE FONTS*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 
+/*CSS RESET*/
 * {
+    padding:0;
     margin:0;
-    padding:0;      /*reseteo marging y padding*/
-    font-family: 'copperplate gothic';     
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "MontSerrat", sans-serif !important;
+    background: linear-gradient(to right, skyblue,white) ;}
 
-header { /*inicio css header*/
-display:grid;
-grid-template-columns: 1fr 1fr;
-background: linear-gradient(to right, skyblue,white) ;
-position: sticky;
-top:0;
-max-height:150px;
-}
+/*modelado header - nav*/
 
-header div {
-grid-column-start: 1;
-grid-column-end: 3;
-
-
-}
-
-header h2 {
-      text-align: right;
-      margin-right:15%;
-    }
-    /*código nuevo con flex*/
-
-header nav ul { 
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:right;
-}
-
-/*header nav ul {
-    background-color: none;
-    padding:4px;
+header {
     position:relative;
-    top: 25px;
-    list-style-type: none;
-    float:right;
-    margin:auto;
- 
-    }          código viejo con prop box modeling
-*/
-
-
-.icon_login {
-float:right;
-max-width: 3%;
-margin:1.3%;
-border:2px black solid;
-border-radius: 10%;
+    width:100%;
+    height:100%;
+     z-index: 100;
+       
 }
 
-.icon_cart {
-float:right;
-max-width: 3%;
-margin:1.3%;
-border:2px black solid;
-border-radius: 10%;
-
+nav {
+    height:100px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-    nav ul li {
-        display:flex;
+.logo {
+    width:140px;
+    margin-left:20px;
+    font-weight:800;
+    font-size:20px;
+   
+}
+.bar-btn {
+    font-size:25px;
+    color:rgb(0, 0, 0);
+    margin-right:3%;
+    cursor:pointer;
     }
 
-   nav ul li a {
-        padding: 10px;
-        margin: 10px;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 15% ;
-        color: white;
-        text-align: center;
-        background-color:black;
-    }  
+    .nav-menu {
+        position: fixed;
+        width:100%;
+        height:0vh;
+        top:100px;
+        background: rgba(0,0,0,.95);
+        text-align:center;
+        transition: all .5s;
+        max-height:350px;
+    }
 
-   nav ul li a:hover {
-        background: white;
-        color: black;
-        border: 1px solid black;
-        border-radius: 15%;
-        text-decoration:underline;
-    } /*fin css header*/
+    .nav-menu li {
+        display:none;
+        line-height: 30px;
+        margin:50px 0;
+        transition: all .5s;
+    }
+
+    .nav-menu li a {
+        color: rgb(255, 255, 255);
+        font-size:16px;
+        text-transform: uppercase;
+        font-weight:600;
+        text-decoration: none;     
+         
+        
+    }
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(248,8,8);
+    transition: .3s;
+}
+.fa-solid {
+    margin-right:10px;
+}
+
+#check {
+    display:none;
+    }
+
+#check:checked ~ .nav-menu {
+        height:100vh;
+    }
+#check:checked ~ .nav-menu li {
+    display: block;
+
+}
+
+
+/*fin modelado header - nav*/
 
 
 #carouselExampleIndicators {
     margin:auto;
+    padding:5%;
     margin-top: 5%;
-    width: 500px;
-    height: 400px;
+    max-width: 1024px;
+    max-height: 768px;
 }
 
 .carousel-inner img {
@@ -103,6 +111,10 @@ border-radius: 10%;
     height: 380px ;
     border-radius: 4%;
     
+}
+
+.carousel-control-next-icon {
+    color:red;
 }
 
 
@@ -140,23 +152,19 @@ text-align: center;
 
  } 
 
-  body {
-    background: linear-gradient(to right, skyblue,white) ;
-        }
-
 
    #_footer {
     background: linear-gradient (to right, skyblue, white);
     text-align: center;
-    position:fixed;
     left:0px;
     bottom:0px;
-    height:35px;
+    height:55px;
     width:100%;
     }
 
     #_footer span {
        font-weight: bold;
+       
         
             }
 
@@ -174,26 +182,6 @@ text-align: center;
         }
          
 
-
-/*
-
- .market_product {
-  text-align:right;
-  display:inline-block;
-  margin-left:10%;
- }
-
-.market_product table {
-margin-left:auto;
-margin-right:auto;
-text-align: left;
-border:1px solid black;
-
-}                   -código viejo box modeling para tienda
-*/
-
-/*css aboutus*/
-
 .aboutus__flex
 {
     display:grid;
@@ -203,17 +191,11 @@ border:1px solid black;
 
 }
 
-.aboutus__flex a {
-       text-decoration:none;
-       border: 1px solid black;
-       border-radius: 5px;
-       text-align: center;
-       max-width: 10%;
-      }
-.aboutus__flex_item {
-    justify-content: center;
-    width:95%;
+
+.card-body {
+    text-align:center ;
 }
+
 .aboutus_aboutus    {
 
     margin-top: 3.5%;
@@ -227,6 +209,7 @@ border:1px solid black;
     grid-row-gap: 1%;
     padding-top: 15px;
     padding-left: 45px;
+    margin-bottom:10%;
     
 }
 
@@ -266,20 +249,8 @@ border:1px solid black;
 /* media queries para responsive  */
 
 @media screen and (max-width: 500px)
-                        {
-                            header nav ul  {
-                                flex-direction: column;
-                                justify-content: left;                                                          
-                            }
-
-                            header h2 {
-                                text-align: left;
-                            }
-
-                            header nav ul li {
-                                padding:3.5%;
-
-                            }     
+                        {                          
+                           
                         
                             .index__section {
                                 margin-top: 35%;
@@ -295,14 +266,8 @@ border:1px solid black;
                         }
                         textarea {
                             max-width: 250px;
-
                         }
-                        .contactus_title 
-                            {
-                                text-align: right;
-                                margin-top: 10%;
-
-                            }
+                   
 
                             .thanks_comment 
                             {
@@ -310,36 +275,32 @@ border:1px solid black;
 
                             }
 
-                            .aboutus_aboutus {
-                                text-align: right;
-                            }
+                        .card {
+                            max-width:280px;
+                           
+                        }
+
 
                         }   
 
-                  @media screen and (max-width: 700px) {
-                        .carrousel img {
-                            display: none;
-                            
-
-                        } 
-                             }
+               
 
 @media screen and (max-width: 470px) {
       
     .index__section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
     }
     .index__product {
-        text-align: right;
+        text-align: center;
     }
     .market__section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-top: 40%;
         
     }
     .market_product {
-        text-align: right;
+        text-align: center;
     
     }
 
@@ -351,13 +312,11 @@ border:1px solid black;
     .market__section {
         margin-top: 10%;
     }
-    .market__category   {   /* falta hacerlo menu hamburguesa cuando se achica */
+    .market__category  {   /* falta hacerlo menu hamburguesa cuando se achica */
         display:none;
+    }
 
-}
-
-
-}
+    }
 
 @media screen and (max-width: 720px)        
 {
@@ -367,5 +326,39 @@ border:1px solid black;
 }
 
 
+}
+
+@media screen and (min-width: 720px)    {
+
+    .logo {
+        margin-left: 30px;
+    }
+    nav {
+        height:100px;
+    }
+    .bar-btn {
+        display: none;
+    }
+    .nav-menu {
+        position:fixed;
+        height:100px;
+        top:0;
+        background:none;
+        transition:none;
+        text-align:right;
+        margin-right:50px;
+        padding-right:40px;
+    }
+
+    .nav-menu li {
+        display:inline-block;
+        line-height:100px;
+        margin:0 25px;
+        transition: none;
+    }
+    .nav-menu li a {
+        font-size:14px;
+        color:black;
+    }
 }
 
