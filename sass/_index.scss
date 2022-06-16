@@ -1,0 +1,48 @@
+#carouselExampleIndicators {
+    margin: auto;
+    padding: 5%;
+    margin-top: 5%;
+    max-width: 1024px;
+    max-height: 768px;
+
+    .carousel-inner img {
+        width: 750px;
+        height: 380px;
+        border-radius: 4%;
+            
+    }
+
+}
+
+.index__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    .index__product {
+        text-align: center;
+
+        p {
+
+            margin: 1%;
+            color: black;
+        }
+
+        .product {
+            border: 1px solid black;
+            border-radius: 15%;
+            margin: 1%;
+        
+        }
+        
+    }
+
+
+}
+
+
+
+.index__main {
+    text-align: center;
+
+}

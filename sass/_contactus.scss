@@ -1,0 +1,43 @@
+
+.form {
+    display:grid;    
+    grid-row-gap: 1%;
+    padding-top: 15px;
+    padding-left: 45px;
+    margin-bottom:10%;
+    
+}
+
+#_subject {
+    width: 300px;
+}
+
+.contactus_title {
+    padding-left:10px;
+    @include titulos;
+}
+
+.contactus_buttons {
+
+    padding-left:15%;
+
+}
+#_name {
+    font-size:12px;
+    font-weight: 600;
+    }
+#_email {
+    @extend #_name ;
+}
+#_phone {
+    @extend #_name ;
+}
+
+#_subject {
+    @extend #_phone ;
+    }
+
+#_comment {
+    @extend #_phone ;
+    font-size: 16px;
+}

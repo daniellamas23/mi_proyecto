@@ -1,0 +1,114 @@
+/* media queries para responsive  */
+
+@media screen and (max-width: 500px) {
+
+
+    .index__section {
+        margin-top: 5%;
+    }
+
+    .form   {
+        padding-left: 3px;
+        padding-bottom:5%;
+    }
+    textarea {
+        max-width: 250px;
+    }
+
+
+        .thanks_comment 
+        {
+            margin-top: 50%;
+
+        }
+
+    .card {
+        max-width:280px;
+       
+    }
+
+
+ 
+}
+
+@media screen and (max-width: 470px) {
+
+    .index__section {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+  
+    .index__product {
+        text-align: center;
+    }
+
+    .market__section {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40%;
+        
+    }
+    .market_product {
+        text-align: center;
+    
+    }
+
+
+    @media screen and (max-width: 680px) {
+
+        .market__section {
+            margin-top: 10%;
+        }
+        .market__category  {   /* falta hacerlo menu hamburguesa cuando se achica */
+            display:none;
+        }
+    
+        }
+
+}
+
+@media screen and (min-width: 720px) {
+    
+
+    nav {
+        height: 100px;
+
+           .logo {
+                margin-left: 30px;
+            }
+
+            .bar-btn {
+                display: none;
+            }
+
+        .nav-menu {
+            position: absolute;
+            height: 100px;
+            top: 0;
+            background: none;
+            transition: none;
+            text-align: right;
+            margin-right: 50px;
+            padding-right: 40px;
+
+
+            li {
+                display: inline-block;
+                line-height: 100px;
+                margin: 0 25px;
+                transition: none;
+
+                a {
+                    font-size: 14px;
+                    color: black;
+                }
+            }
+
+
+        }
+
+        
+    }
+
+
+}
