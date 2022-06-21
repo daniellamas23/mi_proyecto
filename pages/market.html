@@ -9,7 +9,9 @@
    <link rel="stylesheet" href="../sass/main.css"> <!--linkeo archivo estilos css-->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <script src="https://kit.fontawesome.com/08068b216f.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <meta name="description" content="En nuestra tienda podrás encontrar todo lo que buscas">
    <meta name="keywords"  content=" PC DESKTOP , GAMING , JUEGOS, NOTEBOOKS, 
    RYZEN , INTEL CORE, INTEL , AMD ,TARJETA DE VIDEO
@@ -20,7 +22,7 @@
    <header>   
       <nav> 
         <div>
-          <label class="logo animate__animated animate__backInLeft">PowerGamer</label>
+         <label class="logo animate__animated animate__backInLeft"><img src="../img/logo.png"></label>
           </div>
           <input type="checkbox" id="check">
           <label for="check" class="bar-btn">
@@ -37,122 +39,102 @@
    </nav>       <!-- barra de navegación-->
 </header>
 
-  
-<div class="market">
-        
-   <div class="market__category animate__animated animate__fadeInLeft">
-        <ol>
-        <li><h2>Productos</h2></li> 
-        <li><h3>Componentes de PC</h3></li> 
-        </ol>
 
-             <ul>
-            <li>PC Gamer</li>
-            <li>Componentes</li>
-                <ul>
-                        <li>Procesadores</li>
-                        <li>Tarjetas gráficas</li>
-                        <li>Almacenamiento</li>
-                        <li>Memorias Ram</li>
-                        <li>Motherboards</li>
-                </ul>
-            <li>Periféricos</li>
-            <li>Monitores</li>
-        </ul>
-   </div>
-    <section class="market__section">
-    <div class="market_product animate__animated animate__backInUp animate__delay-0.8s"> 
-               <a href="./market.html">
-                   <img src="../img/Equipo_INTEL-1-2-2-1-300x300.jpg" alt="Nuevo Intel I7" width="150" height="150" class="product">
-               </a>     
-      <h2>Equipo Intel</h2>
-                                   
-                  <p>I7-10700K 16 GB Ram 3600Mhz RTX 3060 TI</p>
-                  <p> Monitor y periféricos</p>
-            
-    </div>    
-    <div class="market_product animate__animated animate__backInUp animate__delay-0.8s">  
-               <a href="./market.html">
-                  <img src="../img/equipo_amdeqradryz-300x300.jpg" alt="Nuevo AMD Ryzen 9" width="150" height="150" class="product">
-               </a>
-      <h2>Equipo AMD</h2>
-           
-                  
-      <p>Ryzen 7 5700G 3.8Ghz  16 GB Ram 3200Mhz </p>
-                    
-                    
-         <p>        Onboard VEGA 8
-                      Monitor y periféricos</p>
-                  
-           
-   </div>
+ 
+   <ul class="nav nav-pills market__nav animate__animated animate__fadeIn" >
+      <li class="nav-item">
+         <a class="nav-link active" href="./market.html">OFERTAS!</a>
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./market-pcgamer.html">PC Gamer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./market-cpu.html">Procesadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./market-accs.html">Periféricos</a>
+      </li>
+    </ul>
+
    
-     <div class="market_product animate__animated animate__backInUp animate__delay-0.8s">
-          <a href="./market.html">
-                 <img src="../img/equipo_intel_core.jpg" alt="Nuevo Intel I9" width="150" height="150" class="product">
-          </a>
-          <h2>Equipo Intel</h2>
-      
-               
-          <p>   i9-10900KF 5.3Ghz    16 GB Ram 3600Mhz</p>
-          
-         
-          <p>   RTX 3070 TI
-                  Monitor y periféricos</p>
-            
+
+<div class="card-group market__cards">
+   <div class="card" data-aos="zoom-in">
+     <a href="#"><img src="../img/PC_INTEL_PROMO2.jpg" class="card-img-top" alt="PROMO PC INTEL 2"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER I5 + GPU <p><b> 1350 USD</b></p></h5>
+       <p class="card-text">Especificaciones:  INTEL I5 12600K - 16 GB RAM DDR4 3600Mhz - GTX1650 4GB DDR5 - SSD 480 GB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>
    </div>
-
-   <div class="market_product animate__animated animate__backInUp animate__delay-0.8s">
-      <a href="./market.html">
-          <img src="../img/equipo_intel_corei7_rtx3070_ssd_16gb.jpg" alt="Nuevo Intel I7" width="150" height="150" class="product">
-      </a>     
-<h2>Equipo Intel</h2>
-
-      
-    
-      <p>  I5 12600K - 16 GB     GTX 1660 TI</p>
-     
-      
-      <p>  RTX 3060 TI
-            Monitor y periféricos</p>
-    
-</div> 
-
-<div class="market_product animate__animated animate__backInUp animate__delay-0.8s">  
-      <a href="./market.html">
-         <img src="../img/Notebook_Asus_TUF_DASH_FX516P_I7_16GB_512SSD_PCIE_RTX3060_W10.jpg" alt="ASUS TUF DASH I7" width="150" height="150" class="product">
-      </a>
-<h2>Notebook ASUS TUF</h2>
- 
-          
-      <p>     I7 11370H - 16GB - 512 SSD       PCIe - RTX3060</p>
-            
-         <p>     Pantalla 17,5"         </p>
- 
-</div>
-
-<div class="market_product animate__animated animate__backInUp animate__delay-0.8s">
- <a href="./market.html">
-        <img src="../img/NOTEBOOK_HP_PAVILION_RYZEN7_4800H_8GB_SSD512_GTX1650TI.jpg" alt="HP PAVILION" width="150" height="150" class="product">
- </a>
- <h2>Notebook PAVILION HP</h2>
-  
-    <p>  Ryzen 7 4800H - 8GB - 512 SSD - GTX 1650TI</p>
-     <p>        Pantalla 17,5"</p>
-          
-</div>
-
-</div>
-</section>
-<br>
-<br>
-<br>
-<br>
+   <div class="card" data-aos="zoom-in">
+      <a href="#"> <img src="../img/PC_RYZEN_PROMO.webp" class="card-img-top" alt="PROMO PC RYZEN"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER RYZEN 7 + GPU <p><b> 1600 USD</b></p> </h5>
+       <p class="card-text">Especificaciones: RYZEN 7 5800X - 16 GB RAM DDR4 3600MHZ - GTX1660 TI 6GB DDR5 - SSD 1TB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>
+   </div>
+   <div class="card" data-aos="zoom-in">
+      <a href="#"><img src="../img/PC_INTEL_PROMO3.jpg" class="card-img-top" alt="PROMO PC INTEL I7"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER I7-11700F<p><b> 1990 USD</b></p></h5>
+       <p class="card-text">Especificaciones: I7 I7-11700F - 32 GB RAM DDR4 3600MHZ - RTX 3060 TI 8GB GDDR 6 - SSD 2TB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>     
+   </div>
+   <div class="card" data-aos="zoom-in">
+      <a href="#"><img src="../img/PC_INTEL_PROMO2.jpg" class="card-img-top" alt="PROMO PC INTEL I5"></a>
+      <div class="card-body">
+        <h5 class="card-title">PC GAMER I5 + GPU <p><b> 1350 USD</b></p></h5>
+        <p class="card-text">Especificaciones:  INTEL I5 12600K - 16 GB RAM DDR4 3600Mhz - GTX1650 4GB DDR5 - SSD 480 GB</p>
+        <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+      </div>
+    </div>
+ </div>
 
 
+ <div class="card-group market__cards">
+   <div class="card" data-aos="zoom-in">
+     <a href="#"><img src="../img/PC_INTEL_PROMO3.jpg" class="card-img-top" alt="PROMO PC INTEL I7"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER I7 <p><b> 990 USD</b></p></h5>
+       <p class="card-text">Especificaciones:   I7 I7-11700F - 32 GB RAM DDR4 3600Mhz  - SSD 480 GB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>
+   </div>
+   <div class="card" data-aos="zoom-in">
+      <a href="#"> <img src="../img/PC_INTEL_PROMO2.jpg" class="card-img-top" alt="PROMO PC INTEL I5"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER INTEL I5 <p><b> 1399 USD</b></p> </h5>
+       <p class="card-text">Especificaciones: INTEL I5 12600K - 16 GB RAM DDR4 3600MHZ - GTX 1660 TI 6GB DDR5 - SSD 2TB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>
+   </div>
+   <div class="card" data-aos="zoom-in"> 
+      <a href="#"><img src="../img/PC_INTEL_PROMO2.jpg" class="card-img-top" alt="PROMO PC INTEL I5"></a>
+     <div class="card-body">
+       <h5 class="card-title">PC GAMER INTEL I5<p><b> 1990 USD</b></p></h5>
+       <p class="card-text">Especificaciones: INTEL I5 11400 - 32 GB RAM DDR4 3600MHZ - RTX 3060 TI 8GB GDDR 6 - SSD 2TB</p>
+       <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+     </div>     
+   </div>
+   <div class="card" data-aos="zoom-in">
+      <a href="#"><img src="../img/PC_RYZEN_PROMO.webp" class="card-img-top" alt="PROMO PC RYZEN 7"></a>
+      <div class="card-body">
+        <h5 class="card-title">PC GAMER RYZEN 7  <p><b> 1299 USD</b></p> </h5>
+        <p class="card-text">Especificaciones: RYZEN 7 5700G - 32 GB RAM DDR4 3600MHZ - SSD 2TB</p>
+        <p class="card-text"><small class="text-muted">Oferta hasta agotar stock</small></p>
+      </div>
+    </div>
+ </div>
 
 
-<footer id="_footer">
+
+
+
+<footer id="_footer" data-aos="fade-up"
+data-aos-anchor-placement="bottom-bottom">
    <a href="http://www.instagram.com"> <i class="fa-brands fa-instagram fa-2xl icon-ig"></i></a>
    <a href="http://www.twitter.com"><i class="fa-brands fa-twitter fa-2xl icon-tw"></i></a>
     <a href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2xl icon-wpp"></i></a>
@@ -162,5 +144,8 @@
      
 
 </footer> <!-- pie de página  -->
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -1,31 +1,29 @@
+.market__cards {
 
+    padding-top: 1%;
 
-.market { 
-    display:grid;
-    grid-template-columns: 15% 1fr ;
-    
-    .market__category {
-        padding-top:150px;
-    }
+}
 
+.market__nav {
+    justify-content: center;
+    padding:2% 0 2% 0;
 
 }
 
 .market__section {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:8%;
-    align-content:right;
-    padding: 10% 10% 0 20%;
+    grid-column-gap: 2.5%;
+    align-content: center;
+    padding-top: 5%
 }
 
 .market_product {
-    text-align:center;
+    text-align: center;
 
     .product {
         border: 1px solid black;
         border-radius: 15%;
         margin: 1%;
-      }
+    }
 }
-
