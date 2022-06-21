@@ -8,6 +8,15 @@
 .aboutus_aboutus    {
     @extend .contactus_title ;
     margin-left: 3.5%;
+    padding:1%;
+    
+}
+.card__title {
+    font-weight: 900;
     
 }
 
+.card__text {
+    font-weight:600;
+    background-color:rgba(0,0,0,.35);
+}
