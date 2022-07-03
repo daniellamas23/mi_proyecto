@@ -1,6 +1,9 @@
 @mixin titulos {
-    font-size:24px;
-    font-weight:600;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px grey;
+
+
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swa);
@@ -17,7 +20,7 @@
 $colores: (
     fondo1:skyblue,
     fondo2:white,
-    );
+);
 
 
 $redes: (
@@ -26,9 +29,10 @@ $redes: (
     wpp: green
 );
 
-@each $red, $valor in $redes {
+@each $red,
+$valor in $redes {
     .icon-#{$red} {
-        color:$valor;
+        color: $valor;
     }
 }
 
@@ -45,14 +49,7 @@ $redes: (
 /* Body Style */
 body {
     font-family: "MontSerrat", sans-serif !important;
-    background: linear-gradient(to bottom, map-get($colores, fondo1), map-get($colores, fondo2),map-get($colores, fondo1) );
+    background: linear-gradient(to bottom, map-get($colores, fondo1), map-get($colores, fondo2), map-get($colores, fondo1));
+    overflow-x: hidden;
 
 }
-
-
-
-
-
-
-
-

@@ -4,10 +4,14 @@
 }
 
 .form {
-    padding-top: 15px;
-    padding-left: 25px;
-    margin-bottom: 10%;
-
+   text-align: center;
+    background-color:rgba(0,0,0,.35);   
+    border-radius: 10px;
+    padding:15px;
+    max-width: 360px;
+    margin-left: 10%;
+    margin-right:5%;
+   
 }
 
 #_subject {
@@ -15,7 +19,7 @@
 }
 
 .contactus_title {
-    padding-left: 10px;
+   padding: 10px 0 10px 30px;
     @include titulos;
 }
 
@@ -50,10 +54,11 @@
 
 .mapouter {
     position: relative;
-    text-align: right;
+    padding-right:80%;
     height: 400px;
     width: 500px;
-    margin-right: 5%;
+
+    
 
     .gmap_canvas {
         overflow: hidden;
