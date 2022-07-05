@@ -49,7 +49,7 @@ header .bar-btn {
 }
 
 header .nav-menu {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 0vh;
   top: 100px;
@@ -295,7 +295,7 @@ header .nav-menu li a:hover {
   width: 300px;
 }
 
-.contactus_title, .aboutus_aboutus {
+.contactus_title, .aboutus_aboutus, .card-title {
   padding: 10px 0 10px 30px;
   font-size: 24px;
   font-weight: 600;
@@ -337,18 +337,6 @@ header .nav-menu li a:hover {
   margin-left: 3.5%;
   padding: 1%;
   padding-top: 2%;
-}
-
-.tarjeta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* css thanks */

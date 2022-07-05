@@ -12,8 +12,6 @@
     
 }
 
-.tarjeta {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    }
+.card-title {
+    @extend .contactus_title ;
+}
