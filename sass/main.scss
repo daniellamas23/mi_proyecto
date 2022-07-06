@@ -50,6 +50,5 @@ $valor in $redes {
 body {
     font-family: "MontSerrat", sans-serif !important;
     background: linear-gradient(to bottom, map-get($colores, fondo1), map-get($colores, fondo2), map-get($colores, fondo1));
-    overflow-x: hidden;
-
+ 
 }

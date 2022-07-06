@@ -207,6 +207,12 @@ header .nav-menu li a:hover {
   .gmap_canvas {
     margin: 15px 0 0 50px;
   }
+  .card-title-market {
+    font-size: 16px;
+  }
+  .card-text-market {
+    font-size: 12px;
+  }
 }
 
 #_footer {
@@ -317,16 +323,19 @@ header .nav-menu li a:hover {
 
 .mapouter {
   position: relative;
-  padding-right: 80%;
-  height: 400px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 400px;
-  width: 500px;
+  height: 350px;
+  width: 450px;
+}
+
+.div_map {
+  margin-right: 15%;
 }
 
 .card-body {
@@ -376,6 +385,5 @@ body {
   font-family: "MontSerrat", sans-serif !important;
   background: -webkit-gradient(linear, left top, left bottom, from(skyblue), color-stop(white), to(skyblue));
   background: linear-gradient(to bottom, skyblue, white, skyblue);
-  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */

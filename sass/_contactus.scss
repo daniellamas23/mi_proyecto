@@ -1,6 +1,7 @@
 .contactus__flexbox {
     display: flex;
     justify-content: space-between
+    
 }
 
 .form {
@@ -11,6 +12,7 @@
     max-width: 360px;
     margin-left: 10%;
     margin-right:5%;
+    
    
 }
 
@@ -53,17 +55,20 @@
 
 
 .mapouter {
-    position: relative;
-    padding-right:80%;
-    height: 400px;
-    width: 500px;
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    
 
     
 
     .gmap_canvas {
         overflow: hidden;
         background: none !important;
-        height: 400px;
-        width: 500px;
+        height: 350px;
+        width: 450px;
     }
+}
+.div_map{
+    margin-right:15%;
 }

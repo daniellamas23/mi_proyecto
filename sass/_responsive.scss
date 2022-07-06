@@ -21,11 +21,11 @@
 
     }
 
-     .gmap_canvas {
-       margin: 15px 0 0 50px;
+    .gmap_canvas {
+        margin: 15px 0 0 50px;
         max-height: 280px !important;
         max-width: 330px !important;
-       
+
     }
 
 }
@@ -90,15 +90,25 @@
 @media screen and (max-width:940px) {
 
     .form {
-        padding-left:40%;
+        padding-left: 40%;
     }
 
     .contactus__flexbox {
         flex-direction: column;
-        margin:auto;
+        margin: auto;
     }
+
     .gmap_canvas {
         margin: 15px 0 0 50px;
     }
 
-}
+    .card-title-market {
+        font-size: 16px;
+
+      }
+      .card-text-market {
+        font-size:12px;
+
+      }
+
+    }
