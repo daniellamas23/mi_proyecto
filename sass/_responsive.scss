@@ -21,12 +21,7 @@
 
     }
 
-    .gmap_canvas {
-        margin: 15px 0 0 50px;
-        max-height: 280px !important;
-        max-width: 330px !important;
-
-    }
+ 
 
 }
 
@@ -95,20 +90,31 @@
 
     .contactus__flexbox {
         flex-direction: column;
-        margin: auto;
+
+    }
+
+    .mapouter {
+        width: 350px;
+
+
     }
 
     .gmap_canvas {
-        margin: 15px 0 0 50px;
+        width: auto;
+        margin: 15px 15px 0 55px;
+        max-width: 400px;
     }
 
     .card-title-market {
         font-size: 16px;
 
-      }
-      .card-text-market {
-        font-size:12px;
+    }
 
-      }
+    .card-text-market {
+        font-size: 12px;
 
     }
+    .gmap_canvas {
+        margin-left:8%!important;
+    }
+}

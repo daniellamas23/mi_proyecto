@@ -144,11 +144,6 @@ header .nav-menu li a:hover {
   .thanks_comment {
     margin-top: 50%;
   }
-  .gmap_canvas {
-    margin: 15px 0 0 50px;
-    max-height: 280px !important;
-    max-width: 330px !important;
-  }
 }
 
 @media screen and (max-width: 470px) {
@@ -202,10 +197,14 @@ header .nav-menu li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto;
+  }
+  .mapouter {
+    width: 350px;
   }
   .gmap_canvas {
-    margin: 15px 0 0 50px;
+    width: auto;
+    margin: 15px 15px 0 55px;
+    max-width: 400px;
   }
   .card-title-market {
     font-size: 16px;
@@ -213,9 +212,13 @@ header .nav-menu li a:hover {
   .card-text-market {
     font-size: 12px;
   }
+  .gmap_canvas {
+    margin-left: 8% !important;
+  }
 }
 
 #_footer {
+  position: relative;
   text-align: center;
   left: 0px;
   bottom: 0;
@@ -324,18 +327,15 @@ header .nav-menu li a:hover {
 .mapouter {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin: 0 15px 0 15px;
 }
 
 .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 350px;
-  width: 450px;
-}
-
-.div_map {
-  margin-right: 15%;
+  height: 100%;
+  width: 100%;
 }
 
 .card-body {
@@ -346,6 +346,11 @@ header .nav-menu li a:hover {
   margin-left: 3.5%;
   padding: 1%;
   padding-top: 2%;
+}
+
+.card_aboutus {
+  max-width: 840px;
+  margin: 5% auto 5% auto;
 }
 
 /* css thanks */

@@ -57,18 +57,16 @@
 .mapouter {
     position: relative;    
     height: 100%;
-    width: 100%;
-    
+    width: 80%;
+    margin:0 15px 0 15px;
 
     
 
     .gmap_canvas {
-        overflow: hidden;
+       overflow: hidden;
         background: none !important;
-        height: 350px;
-        width: 450px;
+        height: 100%;
+        width: 100%;
     }
 }
-.div_map{
-    margin-right:15%;
-}
+
