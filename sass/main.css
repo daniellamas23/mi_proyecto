@@ -197,14 +197,15 @@ header .nav-menu li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mapouter {
     width: 350px;
   }
   .gmap_canvas {
-    width: auto;
-    margin: 15px 15px 0 55px;
-    max-width: 400px;
+    max-width: 600px;
   }
   .card-title-market {
     font-size: 16px;
@@ -213,7 +214,9 @@ header .nav-menu li a:hover {
     font-size: 12px;
   }
   .gmap_canvas {
-    margin-left: 8% !important;
+    margin: auto;
+    margin-top: 5%;
+    padding-right: 0 !important;
   }
 }
 
@@ -285,9 +288,6 @@ header .nav-menu li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .form {
@@ -336,6 +336,7 @@ header .nav-menu li a:hover {
   background: none !important;
   height: 100%;
   width: 100%;
+  padding-right: 10%;
 }
 
 .card-body {
