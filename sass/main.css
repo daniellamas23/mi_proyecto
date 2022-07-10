@@ -23,6 +23,11 @@ header nav {
           align-items: center;
 }
 
+header nav .logo {
+  position: relative;
+  z-index: 1000;
+}
+
 header nav .logo img {
   width: 100%;
   padding-left: 30px;
@@ -102,16 +107,29 @@ header .nav-menu li a:hover {
 }
 
 .index__main {
-  padding-top: 5%;
+  padding: 5% 2% 2% 2%;
   text-align: center;
   font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
   line-height: 3rem;
+  background-color: rgba(23, 185, 235, 0.2);
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+}
+
+.index__main ol {
+  letter-spacing: 2px;
 }
 
 .index__main h3 {
   font-weight: 900;
   text-shadow: 1px 1px 3px grey;
+  letter-spacing: 2.2x;
 }
 
 .index__main .fa-hand-pointer {
@@ -143,6 +161,12 @@ header .nav-menu li a:hover {
   }
   .thanks_comment {
     margin-top: 50%;
+  }
+  .card_aboutus {
+    margin: 5% 2% 5% 2% !important;
+  }
+  .index__main {
+    margin: 2%;
   }
 }
 
@@ -225,7 +249,7 @@ header .nav-menu li a:hover {
   text-align: center;
   left: 0px;
   bottom: 0;
-  height: 80px;
+  height: 100%;
   width: 100%;
   margin-top: 5%;
   background-color: rgba(0, 0, 0, 0.25);
@@ -307,7 +331,8 @@ header .nav-menu li a:hover {
   padding: 10px 0 10px 30px;
   font-size: 24px;
   font-weight: 600;
-  text-shadow: 1px 1px 2px grey;
+  text-shadow: -2px -2px 4px red, 2px 2px 6px black, 2px 3px #fff;
+  letter-spacing: 1.5px;
 }
 
 .contactus_buttons {
@@ -362,7 +387,8 @@ header .nav-menu li a:hover {
 .thanks_comment h2 {
   font-size: 24px;
   font-weight: 600;
-  text-shadow: 1px 1px 2px grey;
+  text-shadow: -2px -2px 4px red, 2px 2px 6px black, 2px 3px #fff;
+  letter-spacing: 1.5px;
 }
 
 .icon-ig {
