@@ -416,5 +416,6 @@ body {
   font-family: "MontSerrat", sans-serif !important;
   background: -webkit-gradient(linear, left top, left bottom, from(skyblue), color-stop(white), to(skyblue));
   background: linear-gradient(to bottom, skyblue, white, skyblue);
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */
